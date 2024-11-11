@@ -1,0 +1,27 @@
+Abstraktion: In beiden Beispielen ist Animal eine abstrakte Klasse. 
+Sie definiert grundlegende Eigenschaften (name und age) 
+und eine abstrakte Methode make_sound(), die von jeder Tier-Unterklasse 
+(z.B. Lion, Elephant) implementiert wird.
+
+Kapselung: Die Attribute der Tiere (name und age) sind privat oder geschützt 
+und werden durch Getter-Methoden zugänglich gemacht. 
+Dies ist ein Beispiel für die Kapselung.
+
+Vererbung: Die Klassen Lion und Elephant erben von Animal und erweitern dessen Funktionalität, 
+indem sie die Methode make_sound() implementieren.
+
+Polymorphismus: Polymorphismus wird hier verwendet, um den Zoo durch die Methode 
+makeAllSounds bzw. make_all_sounds alle Tiere ihre spezifischen Geräusche machen zu lassen, 
+ohne explizit den Typ des Tieres zu kennen.
+
+Interfaces: Das Interface Feedable stellt sicher, 
+dass fütterbare Tiere die Methode feed implementieren. 
+Dadurch können Objekte unterschiedlicher Typen (z.B. Lion, Elephant) 
+in der Methode feedAllAnimals gefüttert werden, 
+wenn sie das Interface Feedable implementieren.
+
+Assoziation: Der ZooKeeper interagiert mit Feedable-Objekten (wie Lion und Elephant), 
+ohne dass er diese besitzt.
+
+Aggregation: Der Zoo besitzt eine Liste von Animal-Objekten. 
+Diese Tiere existieren jedoch unabhängig vom Zoo und könnten auch ohne den Zoo bestehen.
